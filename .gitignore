@@ -1,0 +1,22 @@
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*_cache/
+*_files/
+
+# Knitted output (regenerate by knitting the .Rmd)
+analysis/*.html
+
+# Data (download from GEO, see data/README.md)
+data/*.gz
+data/*.txt
+data/*.csv
+
+# Generated CSVs from the analysis
+*.csv
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -18,7 +18,8 @@ Analysis by Prateek & Likhit.
 ## Repository layout
 
 ```
-analysis/FINAL_Research_Project_v3.Rmd   main analysis (knit this)
+analysis/FINAL_Research_Project_v3.Rmd   main analysis, with explanations (knit this)
+analysis/run_analysis.R                  the same code as a plain R script (no knitting needed)
 data/                                    put the GEO download here (not tracked by git)
 README.md
 ```
@@ -44,6 +45,15 @@ The dataset is not stored in this repository. Download the series matrix file fr
                       "mlr3pipelines", "mlr3viz", "data.table"))
    ```
 3. Click **Knit**. The data path is relative to the `.Rmd` file, so keep the folder structure above.
+
+Or run the plain script without knitting, from the `analysis/` folder:
+
+```bash
+Rscript run_analysis.R
+```
+
+`run_analysis.R` contains the same code as the `.Rmd`, without the explanations. It is generated from
+the `.Rmd` code chunks. If you change the `.Rmd`, regenerate the script or make the same change in both.
 
 The script writes three CSV files into the working directory: DEG results, model performance, and the
 processed machine learning dataset.
